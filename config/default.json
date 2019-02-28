@@ -1,0 +1,17 @@
+{
+  "unicefReferencesBaseApi": {
+    "url": "https://api.data.unicef.org/sdmx/Rest/dataflow/UNICEF/CME_DF/1.0/?references=all",
+    "headers": {
+      "accept": "application/vnd.sdmx.structure+json;version=1.0",
+      "origin": "http://localhost"
+    }
+  },
+  "unicefDataBaseApi": {
+    "url": "https://api.data.unicef.org/sdmx/Rest/data/UNICEF,CME_DF,1.0/{countryCode}.{indicatorCode}.{sexCode}.{otherCode}./?dimensionAtObservation=AllDimensions",
+    "headers": {
+      "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd",
+      "origin": "http://localhost",
+      "referer": "http://localhost"
+    }
+  }
+}

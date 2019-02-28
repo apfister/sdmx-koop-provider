@@ -1,0 +1,2234 @@
+[
+    {
+      "X": 66.02688198,
+      "Y": 33.83160199,
+      "ISO3CD": "AFG",
+      "geoAreaCode": 4,
+      "geoAreaName": "Afghanistan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 20.06660928,
+      "Y": 41.13897007,
+      "ISO3CD": "ALB",
+      "geoAreaCode": 8,
+      "geoAreaName": "Albania",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 21.47585697,
+      "Y": -80.40897662,
+      "ISO3CD": "ATA",
+      "geoAreaCode": 10,
+      "geoAreaName": "Antarctica",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 2.678164227,
+      "Y": 28.15940032,
+      "ISO3CD": "DZA",
+      "geoAreaCode": 12,
+      "geoAreaName": "Algeria",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -170.7187269,
+      "Y": -14.30587306,
+      "ISO3CD": "ASM",
+      "geoAreaCode": 16,
+      "geoAreaName": "American Samoa",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 1.576257417,
+      "Y": 42.54548611,
+      "ISO3CD": "AND",
+      "geoAreaCode": 20,
+      "geoAreaName": "Andorra",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 17.57817062,
+      "Y": -12.33724746,
+      "ISO3CD": "AGO",
+      "geoAreaCode": 24,
+      "geoAreaName": "Angola",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -61.7999755,
+      "Y": 17.07761471,
+      "ISO3CD": "ATG",
+      "geoAreaCode": 28,
+      "geoAreaName": "Antigua and Barbuda",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 50.01064725,
+      "Y": 40.39229544,
+      "ISO3CD": "AZE",
+      "geoAreaCode": 31,
+      "geoAreaName": "Azerbaijan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -65.14563274,
+      "Y": -35.19446255,
+      "ISO3CD": "ARG",
+      "geoAreaCode": 32,
+      "geoAreaName": "Argentina",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 134.3499412,
+      "Y": -25.57717202,
+      "ISO3CD": "AUS",
+      "geoAreaCode": 36,
+      "geoAreaName": "Australia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 14.14172472,
+      "Y": 47.58704857,
+      "ISO3CD": "AUT",
+      "geoAreaCode": 40,
+      "geoAreaName": "Austria",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -78.05111663,
+      "Y": 24.69546597,
+      "ISO3CD": "BHS",
+      "geoAreaCode": 44,
+      "geoAreaName": "Bahamas",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 50.5490754,
+      "Y": 26.04407747,
+      "ISO3CD": "BHR",
+      "geoAreaCode": 48,
+      "geoAreaName": "Bahrain",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 89.17660788,
+      "Y": 22.86961622,
+      "ISO3CD": "BGD",
+      "geoAreaCode": 50,
+      "geoAreaName": "Bangladesh",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 44.93839317,
+      "Y": 40.29499741,
+      "ISO3CD": "ARM",
+      "geoAreaCode": 51,
+      "geoAreaName": "Armenia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -59.5346489,
+      "Y": 13.13648273,
+      "ISO3CD": "BRB",
+      "geoAreaCode": 52,
+      "geoAreaName": "Barbados",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 4.660976456,
+      "Y": 50.64104975,
+      "ISO3CD": "BEL",
+      "geoAreaCode": 56,
+      "geoAreaName": "Belgium",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -64.78155012,
+      "Y": 32.27881922,
+      "ISO3CD": "BMU",
+      "geoAreaCode": 60,
+      "geoAreaName": "Bermuda",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 90.45098484,
+      "Y": 27.39598568,
+      "ISO3CD": "BTN",
+      "geoAreaCode": 64,
+      "geoAreaName": "Bhutan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -64.66224284,
+      "Y": -16.71273412,
+      "ISO3CD": "BOL",
+      "geoAreaCode": 68,
+      "geoAreaName": "Bolivia (Plurinational State of)",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 17.78584332,
+      "Y": 44.16845548,
+      "ISO3CD": "BIH",
+      "geoAreaCode": 70,
+      "geoAreaName": "Bosnia and Herzegovina",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 23.81380223,
+      "Y": -22.18810073,
+      "ISO3CD": "BWA",
+      "geoAreaCode": 72,
+      "geoAreaName": "Botswana",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 3.410732868,
+      "Y": -54.43295905,
+      "ISO3CD": "BVT",
+      "geoAreaCode": 74,
+      "geoAreaName": "Bouvet Island",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -53.08432878,
+      "Y": -10.77668561,
+      "ISO3CD": "BRA",
+      "geoAreaCode": 76,
+      "geoAreaName": "Brazil",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -88.70199554,
+      "Y": 17.19965901,
+      "ISO3CD": "BLZ",
+      "geoAreaCode": 84,
+      "geoAreaName": "Belize",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 72.38715553,
+      "Y": -7.299281071,
+      "ISO3CD": "IOT",
+      "geoAreaCode": 86,
+      "geoAreaName": "British Indian Ocean Territory",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 160.1584117,
+      "Y": -9.622391719,
+      "ISO3CD": "SLB",
+      "geoAreaCode": 90,
+      "geoAreaName": "Solomon Islands",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -64.63294223,
+      "Y": 18.42256578,
+      "ISO3CD": "VGB",
+      "geoAreaCode": 92,
+      "geoAreaName": "British Virgin Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 114.6288563,
+      "Y": 4.49736984,
+      "ISO3CD": "BRN",
+      "geoAreaCode": 96,
+      "geoAreaName": "Brunei Darussalam",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 25.23763153,
+      "Y": 42.75731323,
+      "ISO3CD": "BGR",
+      "geoAreaCode": 100,
+      "geoAreaName": "Bulgaria",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 96.51752295,
+      "Y": 21.19332882,
+      "ISO3CD": "MMR",
+      "geoAreaCode": 104,
+      "geoAreaName": "Myanmar",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 29.89080992,
+      "Y": -3.366387428,
+      "ISO3CD": "BDI",
+      "geoAreaCode": 108,
+      "geoAreaName": "Burundi",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 28.04940161,
+      "Y": 53.54193075,
+      "ISO3CD": "BLR",
+      "geoAreaCode": 112,
+      "geoAreaName": "Belarus",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 104.922836,
+      "Y": 12.71163737,
+      "ISO3CD": "KHM",
+      "geoAreaCode": 116,
+      "geoAreaName": "Cambodia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 12.7419827,
+      "Y": 5.692387031,
+      "ISO3CD": "CMR",
+      "geoAreaCode": 120,
+      "geoAreaName": "Cameroon",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -101.6575058,
+      "Y": 57.72360191,
+      "ISO3CD": "CAN",
+      "geoAreaCode": 124,
+      "geoAreaName": "Canada",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -23.63544151,
+      "Y": 15.07791834,
+      "ISO3CD": "CPV",
+      "geoAreaCode": 132,
+      "geoAreaName": "Cabo Verde",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -81.16740559,
+      "Y": 19.32266656,
+      "ISO3CD": "CYM",
+      "geoAreaCode": 136,
+      "geoAreaName": "Cayman Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 20.93559492,
+      "Y": 7.003720791,
+      "ISO3CD": "CAF",
+      "geoAreaCode": 140,
+      "geoAreaName": "Central African Republic",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 80.70489654,
+      "Y": 7.614693343,
+      "ISO3CD": "LKA",
+      "geoAreaCode": 144,
+      "geoAreaName": "Sri Lanka",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 18.66618401,
+      "Y": 15.36279341,
+      "ISO3CD": "TCD",
+      "geoAreaCode": 148,
+      "geoAreaName": "Chad",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -71.23029019,
+      "Y": -35.2652885,
+      "ISO3CD": "CHL",
+      "geoAreaCode": 152,
+      "geoAreaName": "Chile",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 104.1403375,
+      "Y": 32.30955217,
+      "ISO3CD": "CHN",
+      "geoAreaCode": 156,
+      "geoAreaName": "China",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 105.6426067,
+      "Y": -10.4882473,
+      "ISO3CD": "CXR",
+      "geoAreaCode": 162,
+      "geoAreaName": "Christmas Island",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 96.82633757,
+      "Y": -12.18600682,
+      "ISO3CD": "CCK",
+      "geoAreaCode": 166,
+      "geoAreaName": "Cocos (Keeling) Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -73.07446751,
+      "Y": 3.888209046,
+      "ISO3CD": "COL",
+      "geoAreaCode": 170,
+      "geoAreaName": "Colombia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 43.34234565,
+      "Y": -11.66121732,
+      "ISO3CD": "COM",
+      "geoAreaCode": 174,
+      "geoAreaName": "Comoros",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 45.14015057,
+      "Y": -12.82217691,
+      "ISO3CD": "MYT",
+      "geoAreaCode": 175,
+      "geoAreaName": "Mayotte",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 15.22052612,
+      "Y": -0.840544119,
+      "ISO3CD": "COG",
+      "geoAreaCode": 178,
+      "geoAreaName": "Congo",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 23.65496507,
+      "Y": -2.877154732,
+      "ISO3CD": "COD",
+      "geoAreaCode": 180,
+      "geoAreaName": "Democratic Republic of the Congo",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -159.7711391,
+      "Y": -21.22696458,
+      "ISO3CD": "COK",
+      "geoAreaCode": 184,
+      "geoAreaName": "Cook Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -84.19712782,
+      "Y": 9.970998683,
+      "ISO3CD": "CRI",
+      "geoAreaCode": 188,
+      "geoAreaName": "Costa Rica",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 17.95874553,
+      "Y": 45.45172212,
+      "ISO3CD": "HRV",
+      "geoAreaCode": 191,
+      "geoAreaName": "Croatia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -79.54460144,
+      "Y": 22.10030366,
+      "ISO3CD": "CUB",
+      "geoAreaCode": 192,
+      "geoAreaName": "Cuba",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 33.22285964,
+      "Y": 35.05659437,
+      "ISO3CD": "CYP",
+      "geoAreaCode": 196,
+      "geoAreaName": "Cyprus",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 15.33151382,
+      "Y": 49.73913871,
+      "ISO3CD": "CZE",
+      "geoAreaCode": 203,
+      "geoAreaName": "Czechia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 2.339933594,
+      "Y": 9.65401646,
+      "ISO3CD": "BEN",
+      "geoAreaCode": 204,
+      "geoAreaName": "Benin",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 9.326571283,
+      "Y": 56.03829721,
+      "ISO3CD": "DNK",
+      "geoAreaCode": 208,
+      "geoAreaName": "Denmark",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -61.3493756,
+      "Y": 15.43391378,
+      "ISO3CD": "DMA",
+      "geoAreaCode": 212,
+      "geoAreaName": "Dominica",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -70.49847576,
+      "Y": 18.89832088,
+      "ISO3CD": "DOM",
+      "geoAreaCode": 214,
+      "geoAreaName": "Dominican Republic",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -78.37005241,
+      "Y": -1.447785891,
+      "ISO3CD": "ECU",
+      "geoAreaCode": 218,
+      "geoAreaName": "Ecuador",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -88.86862995,
+      "Y": 13.73603564,
+      "ISO3CD": "SLV",
+      "geoAreaCode": 222,
+      "geoAreaName": "El Salvador",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 10.46535826,
+      "Y": 1.565792376,
+      "ISO3CD": "GNQ",
+      "geoAreaCode": 226,
+      "geoAreaName": "Equatorial Guinea",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 39.63505296,
+      "Y": 8.631223181,
+      "ISO3CD": "ETH",
+      "geoAreaCode": 231,
+      "geoAreaName": "Ethiopia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 38.11074289,
+      "Y": 16.12894644,
+      "ISO3CD": "ERI",
+      "geoAreaCode": 232,
+      "geoAreaName": "Eritrea",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 25.84093481,
+      "Y": 58.68487172,
+      "ISO3CD": "EST",
+      "geoAreaCode": 233,
+      "geoAreaName": "Estonia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -7.122044325,
+      "Y": 62.21228119,
+      "ISO3CD": "FRO",
+      "geoAreaCode": 234,
+      "geoAreaName": "Faroe Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -58.75246778,
+      "Y": -51.74562601,
+      "ISO3CD": "FLK",
+      "geoAreaCode": 238,
+      "geoAreaName": "Falkland Islands (Malvinas)",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -36.90662765,
+      "Y": -54.20736749,
+      "ISO3CD": "SGS",
+      "geoAreaCode": 239,
+      "geoAreaName": "South Georgia and the South Sandwich Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 177.9660884,
+      "Y": -17.83301566,
+      "ISO3CD": "FJI",
+      "geoAreaCode": 242,
+      "geoAreaName": "Fiji",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 23.308447,
+      "Y": 61.91586738,
+      "ISO3CD": "FIN",
+      "geoAreaCode": 246,
+      "geoAreaName": "Finland",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 19.80945969,
+      "Y": 60.1544901,
+      "ISO3CD": "ALA",
+      "geoAreaCode": 248,
+      "geoAreaName": "�land Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 2.457288129,
+      "Y": 46.62660861,
+      "ISO3CD": "FRA",
+      "geoAreaCode": 250,
+      "geoAreaName": "France",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -53.23619089,
+      "Y": 3.922673437,
+      "ISO3CD": "GUF",
+      "geoAreaCode": 254,
+      "geoAreaName": "French Guiana",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -149.4052367,
+      "Y": -17.67709294,
+      "ISO3CD": "PYF",
+      "geoAreaCode": 258,
+      "geoAreaName": "French Polynesia",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 69.64849091,
+      "Y": -49.6068576,
+      "ISO3CD": "ATF",
+      "geoAreaCode": 260,
+      "geoAreaName": "French Southern Territories",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 42.18274707,
+      "Y": 11.56004161,
+      "ISO3CD": "DJI",
+      "geoAreaCode": 262,
+      "geoAreaName": "Djibouti",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 11.78727747,
+      "Y": -0.60687619,
+      "ISO3CD": "GAB",
+      "geoAreaCode": 266,
+      "geoAreaName": "Gabon",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 43.3713615,
+      "Y": 42.04813028,
+      "ISO3CD": "GEO",
+      "geoAreaCode": 268,
+      "geoAreaName": "Georgia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -15.39944785,
+      "Y": 13.45295927,
+      "ISO3CD": "GMB",
+      "geoAreaCode": 270,
+      "geoAreaName": "Gambia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 35.25694122,
+      "Y": 31.94347933,
+      "ISO3CD": "PSE",
+      "geoAreaCode": 275,
+      "geoAreaName": "State of Palestine",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 10.3806066,
+      "Y": 51.08862743,
+      "ISO3CD": "DEU",
+      "geoAreaCode": 276,
+      "geoAreaName": "Germany",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -1.205623522,
+      "Y": 7.964825185,
+      "ISO3CD": "GHA",
+      "geoAreaCode": 288,
+      "geoAreaName": "Ghana",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -5.347561686,
+      "Y": 36.13895036,
+      "ISO3CD": "GIB",
+      "geoAreaCode": 292,
+      "geoAreaName": "Gibraltar",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -157.5643005,
+      "Y": 1.768837732,
+      "ISO3CD": "KIR",
+      "geoAreaCode": 296,
+      "geoAreaName": "Kiribati",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 22.58307827,
+      "Y": 39.47301873,
+      "ISO3CD": "GRC",
+      "geoAreaCode": 300,
+      "geoAreaName": "Greece",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -41.39371316,
+      "Y": 74.75625681,
+      "ISO3CD": "GRL",
+      "geoAreaCode": 304,
+      "geoAreaName": "Greenland",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -61.68248568,
+      "Y": 12.11238395,
+      "ISO3CD": "GRD",
+      "geoAreaCode": 308,
+      "geoAreaName": "Grenada",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -61.64762115,
+      "Y": 16.14416917,
+      "ISO3CD": "GLP",
+      "geoAreaCode": 312,
+      "geoAreaName": "Guadeloupe",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 144.7029305,
+      "Y": 13.35485404,
+      "ISO3CD": "GUM",
+      "geoAreaCode": 316,
+      "geoAreaName": "Guam",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -91.2312746,
+      "Y": 15.00273719,
+      "ISO3CD": "GTM",
+      "geoAreaCode": 320,
+      "geoAreaName": "Guatemala",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -11.28173419,
+      "Y": 11.00210343,
+      "ISO3CD": "GIN",
+      "geoAreaCode": 324,
+      "geoAreaName": "Guinea",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -58.97322037,
+      "Y": 4.788012784,
+      "ISO3CD": "GUY",
+      "geoAreaCode": 328,
+      "geoAreaName": "Guyana",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -72.33640958,
+      "Y": 18.40426539,
+      "ISO3CD": "HTI",
+      "geoAreaCode": 332,
+      "geoAreaName": "Haiti",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 73.52633626,
+      "Y": -53.09106147,
+      "ISO3CD": "HMD",
+      "geoAreaCode": 334,
+      "geoAreaName": "Heard Island and McDonald Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 12.45315803,
+      "Y": 41.90343751,
+      "ISO3CD": "VAT",
+      "geoAreaCode": 336,
+      "geoAreaName": "Holy See",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -86.59974381,
+      "Y": 14.82243161,
+      "ISO3CD": "HND",
+      "geoAreaCode": 340,
+      "geoAreaName": "Honduras",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 114.0266445,
+      "Y": 22.41749934,
+      "ISO3CD": "HKG",
+      "geoAreaCode": 344,
+      "geoAreaName": "China, Hong Kong Special Administrative Region",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 19.41221519,
+      "Y": 47.1651448,
+      "ISO3CD": "HUN",
+      "geoAreaCode": 348,
+      "geoAreaName": "Hungary",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -19.02116966,
+      "Y": 64.79134763,
+      "ISO3CD": "ISL",
+      "geoAreaCode": 352,
+      "geoAreaName": "Iceland",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 79.3608464,
+      "Y": 22.34642074,
+      "ISO3CD": "IND",
+      "geoAreaCode": 356,
+      "geoAreaName": "India",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 113.9174,
+      "Y": -0.994582204,
+      "ISO3CD": "IDN",
+      "geoAreaCode": 360,
+      "geoAreaName": "Indonesia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 54.19766348,
+      "Y": 32.74370885,
+      "ISO3CD": "IRN",
+      "geoAreaCode": 364,
+      "geoAreaName": "Iran (Islamic Republic of)",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 43.76606267,
+      "Y": 33.05013795,
+      "ISO3CD": "IRQ",
+      "geoAreaCode": 368,
+      "geoAreaName": "Iraq",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -7.121425272,
+      "Y": 53.25274054,
+      "ISO3CD": "IRL",
+      "geoAreaCode": 372,
+      "geoAreaName": "Ireland",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 34.62277992,
+      "Y": 31.06164552,
+      "ISO3CD": "ISR",
+      "geoAreaCode": 376,
+      "geoAreaName": "Israel",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 12.57022427,
+      "Y": 42.79917282,
+      "ISO3CD": "ITA",
+      "geoAreaCode": 380,
+      "geoAreaName": "Italy",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -5.552690016,
+      "Y": 7.62211586,
+      "ISO3CD": "CIV",
+      "geoAreaCode": 384,
+      "geoAreaName": "C�te d'Ivoire",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -77.31068409,
+      "Y": 18.15616857,
+      "ISO3CD": "JAM",
+      "geoAreaCode": 388,
+      "geoAreaName": "Jamaica",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 139.2716103,
+      "Y": 36.6554539,
+      "ISO3CD": "JPN",
+      "geoAreaCode": 392,
+      "geoAreaName": "Japan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 66.65359159,
+      "Y": 48.01963494,
+      "ISO3CD": "KAZ",
+      "geoAreaCode": 398,
+      "geoAreaName": "Kazakhstan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 37.13024774,
+      "Y": 30.65365973,
+      "ISO3CD": "JOR",
+      "geoAreaCode": 400,
+      "geoAreaName": "Jordan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 37.86096816,
+      "Y": 0.534797278,
+      "ISO3CD": "KEN",
+      "geoAreaCode": 404,
+      "geoAreaName": "Kenya",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 127.1803633,
+      "Y": 40.1462645,
+      "ISO3CD": "PRK",
+      "geoAreaCode": 408,
+      "geoAreaName": "Democratic People's Republic of Korea",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 127.8610254,
+      "Y": 36.45201023,
+      "ISO3CD": "KOR",
+      "geoAreaCode": 410,
+      "geoAreaName": "Republic of Korea",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 47.49305029,
+      "Y": 29.53949468,
+      "ISO3CD": "KWT",
+      "geoAreaCode": 414,
+      "geoAreaName": "Kuwait",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 74.52324839,
+      "Y": 41.46204516,
+      "ISO3CD": "KGZ",
+      "geoAreaCode": 417,
+      "geoAreaName": "Kyrgyzstan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 101.9901968,
+      "Y": 20.27482773,
+      "ISO3CD": "LAO",
+      "geoAreaCode": 418,
+      "geoAreaName": "Lao People's Democratic Republic",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 35.89391711,
+      "Y": 33.92152458,
+      "ISO3CD": "LBN",
+      "geoAreaCode": 422,
+      "geoAreaName": "Lebanon",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 28.25362195,
+      "Y": -29.58041814,
+      "ISO3CD": "LSO",
+      "geoAreaCode": 426,
+      "geoAreaName": "Lesotho",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 26.42461876,
+      "Y": 56.64196636,
+      "ISO3CD": "LVA",
+      "geoAreaCode": 428,
+      "geoAreaName": "Latvia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -9.311879038,
+      "Y": 6.448381009,
+      "ISO3CD": "LBR",
+      "geoAreaCode": 430,
+      "geoAreaName": "Liberia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 18.0295985,
+      "Y": 27.04042819,
+      "ISO3CD": "LBY",
+      "geoAreaCode": 434,
+      "geoAreaName": "Libya",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 9.552985019,
+      "Y": 47.14167005,
+      "ISO3CD": "LIE",
+      "geoAreaCode": 438,
+      "geoAreaName": "Liechtenstein",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 23.90517807,
+      "Y": 55.33680309,
+      "ISO3CD": "LTU",
+      "geoAreaCode": 440,
+      "geoAreaName": "Lithuania",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 6.092656563,
+      "Y": 49.77679538,
+      "ISO3CD": "LUX",
+      "geoAreaCode": 442,
+      "geoAreaName": "Luxembourg",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 113.5665388,
+      "Y": 22.1237259,
+      "ISO3CD": "MAC",
+      "geoAreaCode": 446,
+      "geoAreaName": "China, Macao Special Administrative Region",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 46.6982339,
+      "Y": -19.38514785,
+      "ISO3CD": "MDG",
+      "geoAreaCode": 450,
+      "geoAreaName": "Madagascar",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 33.4884625,
+      "Y": -13.40819859,
+      "ISO3CD": "MWI",
+      "geoAreaCode": 454,
+      "geoAreaName": "Malawi",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 116.8346314,
+      "Y": 5.452415309,
+      "ISO3CD": "MYS",
+      "geoAreaCode": 458,
+      "geoAreaName": "Malaysia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 73.09672546,
+      "Y": -0.614385021,
+      "ISO3CD": "MDV",
+      "geoAreaCode": 462,
+      "geoAreaName": "Maldives",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -3.522016039,
+      "Y": 17.35311254,
+      "ISO3CD": "MLI",
+      "geoAreaCode": 466,
+      "geoAreaName": "Mali",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 14.44617519,
+      "Y": 35.89194275,
+      "ISO3CD": "MLT",
+      "geoAreaCode": 470,
+      "geoAreaName": "Malta",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -60.91544135,
+      "Y": 14.56086108,
+      "ISO3CD": "MTQ",
+      "geoAreaCode": 474,
+      "geoAreaName": "Martinique",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -10.33187259,
+      "Y": 20.26089546,
+      "ISO3CD": "MRT",
+      "geoAreaCode": 478,
+      "geoAreaName": "Mauritania",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 57.568022,
+      "Y": -20.28581998,
+      "ISO3CD": "MUS",
+      "geoAreaCode": 480,
+      "geoAreaName": "Mauritius",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -102.5148166,
+      "Y": 23.93378032,
+      "ISO3CD": "MEX",
+      "geoAreaCode": 484,
+      "geoAreaName": "Mexico",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 7.424214814,
+      "Y": 43.73532918,
+      "ISO3CD": "MCO",
+      "geoAreaCode": 492,
+      "geoAreaName": "Monaco",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 103.0728057,
+      "Y": 46.83892054,
+      "ISO3CD": "MNG",
+      "geoAreaCode": 496,
+      "geoAreaName": "Mongolia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 28.4650624,
+      "Y": 47.20236795,
+      "ISO3CD": "MDA",
+      "geoAreaCode": 498,
+      "geoAreaName": "Republic of Moldova",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 19.25214024,
+      "Y": 42.78717043,
+      "ISO3CD": "MNE",
+      "geoAreaCode": 499,
+      "geoAreaName": "Montenegro",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -62.19261223,
+      "Y": 16.73558313,
+      "ISO3CD": "MSR",
+      "geoAreaCode": 500,
+      "geoAreaName": "Montserrat",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -6.281942841,
+      "Y": 31.8440131,
+      "ISO3CD": "MAR",
+      "geoAreaCode": 504,
+      "geoAreaName": "Morocco",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 38.18479941,
+      "Y": -14.27963886,
+      "ISO3CD": "MOZ",
+      "geoAreaCode": 508,
+      "geoAreaName": "Mozambique",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 57.87743482,
+      "Y": 21.98805614,
+      "ISO3CD": "OMN",
+      "geoAreaCode": 512,
+      "geoAreaName": "Oman",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 17.21907885,
+      "Y": -22.13817068,
+      "ISO3CD": "NAM",
+      "geoAreaCode": 516,
+      "geoAreaName": "Namibia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 166.92313,
+      "Y": -0.528742623,
+      "ISO3CD": "NRU",
+      "geoAreaCode": 520,
+      "geoAreaName": "Nauru",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 83.94678863,
+      "Y": 28.25866332,
+      "ISO3CD": "NPL",
+      "geoAreaCode": 524,
+      "geoAreaName": "Nepal",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 5.331480568,
+      "Y": 51.86728884,
+      "ISO3CD": "NLD",
+      "geoAreaCode": 528,
+      "geoAreaName": "Netherlands",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -68.30676179,
+      "Y": 12.22720635,
+      "ISO3CD": "ANT",
+      "geoAreaCode": 530,
+      "geoAreaName": "Netherlands Antilles",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -68.95033464,
+      "Y": 12.15058042,
+      "ISO3CD": "CUW",
+      "geoAreaCode": 531,
+      "geoAreaName": "Cura�ao",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -69.97050586,
+      "Y": 12.50878756,
+      "ISO3CD": "ABW",
+      "geoAreaCode": 533,
+      "geoAreaName": "Aruba",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -63.06198692,
+      "Y": 18.03926508,
+      "ISO3CD": "SXM",
+      "geoAreaCode": 534,
+      "geoAreaName": "Sint Maarten (Dutch part)",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 165.5067368,
+      "Y": -21.41742531,
+      "ISO3CD": "NCL",
+      "geoAreaCode": 540,
+      "geoAreaName": "New Caledonia",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 167.0679779,
+      "Y": -15.34445547,
+      "ISO3CD": "VUT",
+      "geoAreaCode": 548,
+      "geoAreaName": "Vanuatu",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 170.4755673,
+      "Y": -43.98721568,
+      "ISO3CD": "NZL",
+      "geoAreaCode": 554,
+      "geoAreaName": "New Zealand",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -85.03060315,
+      "Y": 12.84210839,
+      "ISO3CD": "NIC",
+      "geoAreaCode": 558,
+      "geoAreaName": "Nicaragua",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 9.400167877,
+      "Y": 17.42143036,
+      "ISO3CD": "NER",
+      "geoAreaCode": 562,
+      "geoAreaName": "Niger",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 8.097363256,
+      "Y": 9.585789025,
+      "ISO3CD": "NGA",
+      "geoAreaCode": 566,
+      "geoAreaName": "Nigeria",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -169.8601693,
+      "Y": -19.05000475,
+      "ISO3CD": "NIU",
+      "geoAreaCode": 570,
+      "geoAreaName": "Niue",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 167.9515548,
+      "Y": -29.03230018,
+      "ISO3CD": "NFK",
+      "geoAreaCode": 574,
+      "geoAreaName": "Norfolk Island",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 11.47846389,
+      "Y": 61.34311134,
+      "ISO3CD": "NOR",
+      "geoAreaCode": 578,
+      "geoAreaName": "Norway",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 145.7582114,
+      "Y": 15.19099517,
+      "ISO3CD": "MNP",
+      "geoAreaCode": 580,
+      "geoAreaName": "Northern Mariana Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -162.4343752,
+      "Y": 5.874443968,
+      "ISO3CD": "UMI",
+      "geoAreaCode": 581,
+      "geoAreaName": "US Minor Outlying Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 158.225216,
+      "Y": 6.880670092,
+      "ISO3CD": "FSM",
+      "geoAreaCode": 583,
+      "geoAreaName": "Micronesia, Federated States of",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 171.0839119,
+      "Y": 7.110213497,
+      "ISO3CD": "MHL",
+      "geoAreaCode": 584,
+      "geoAreaName": "Marshall Islands",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 134.5733878,
+      "Y": 7.502307591,
+      "ISO3CD": "PLW",
+      "geoAreaCode": 585,
+      "geoAreaName": "Palau",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 68.80479684,
+      "Y": 29.36491634,
+      "ISO3CD": "PAK",
+      "geoAreaCode": 586,
+      "geoAreaName": "Pakistan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -81.26616623,
+      "Y": 8.450965746,
+      "ISO3CD": "PAN",
+      "geoAreaCode": 591,
+      "geoAreaName": "Panama",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 145.8587761,
+      "Y": -6.756057077,
+      "ISO3CD": "PNG",
+      "geoAreaCode": 598,
+      "geoAreaName": "Papua New Guinea",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -60.54854225,
+      "Y": -21.70216237,
+      "ISO3CD": "PRY",
+      "geoAreaCode": 600,
+      "geoAreaName": "Paraguay",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -71.82093277,
+      "Y": -13.58939705,
+      "ISO3CD": "PER",
+      "geoAreaCode": 604,
+      "geoAreaName": "Peru",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 120.8601418,
+      "Y": 14.16591706,
+      "ISO3CD": "PHL",
+      "geoAreaCode": 608,
+      "geoAreaName": "Philippines",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -128.3225873,
+      "Y": -24.37538456,
+      "ISO3CD": "PCN",
+      "geoAreaCode": 612,
+      "geoAreaName": "Pitcairn",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 19.40660158,
+      "Y": 52.1226733,
+      "ISO3CD": "POL",
+      "geoAreaCode": 616,
+      "geoAreaName": "Poland",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -7.961599811,
+      "Y": 39.68509315,
+      "ISO3CD": "PRT",
+      "geoAreaCode": 620,
+      "geoAreaName": "Portugal",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -14.40182514,
+      "Y": 12.11760394,
+      "ISO3CD": "GNB",
+      "geoAreaCode": 624,
+      "geoAreaName": "Guinea-Bissau",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 125.9451052,
+      "Y": -8.797497247,
+      "ISO3CD": "TLS",
+      "geoAreaCode": 626,
+      "geoAreaName": "Timor-Leste",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -66.47591017,
+      "Y": 18.22753799,
+      "ISO3CD": "PRI",
+      "geoAreaCode": 630,
+      "geoAreaName": "Puerto Rico",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 51.19152467,
+      "Y": 25.28355379,
+      "ISO3CD": "QAT",
+      "geoAreaCode": 634,
+      "geoAreaName": "Qatar",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 55.53171398,
+      "Y": -21.13183266,
+      "ISO3CD": "REU",
+      "geoAreaCode": 638,
+      "geoAreaName": "R�union",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 24.98481009,
+      "Y": 45.83893563,
+      "ISO3CD": "ROU",
+      "geoAreaCode": 642,
+      "geoAreaName": "Romania",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 99.01404926,
+      "Y": 61.61899849,
+      "ISO3CD": "RUS",
+      "geoAreaCode": 643,
+      "geoAreaName": "Russian Federation",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 29.92310194,
+      "Y": -1.999842114,
+      "ISO3CD": "RWA",
+      "geoAreaCode": 646,
+      "geoAreaName": "Rwanda",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -62.83173536,
+      "Y": 17.89513362,
+      "ISO3CD": "BLM",
+      "geoAreaCode": 652,
+      "geoAreaName": "Saint Barth�lemy",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -5.705752501,
+      "Y": -15.96503946,
+      "ISO3CD": "SHN",
+      "geoAreaCode": 654,
+      "geoAreaName": "Saint Helena",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -62.76628613,
+      "Y": 17.33994219,
+      "ISO3CD": "KNA",
+      "geoAreaCode": 659,
+      "geoAreaName": "Saint Kitts and Nevis",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -63.05651612,
+      "Y": 18.21525315,
+      "ISO3CD": "AIA",
+      "geoAreaCode": 660,
+      "geoAreaName": "Anguilla",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -60.96529553,
+      "Y": 13.89405601,
+      "ISO3CD": "LCA",
+      "geoAreaCode": 662,
+      "geoAreaName": "Saint Lucia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -63.04505461,
+      "Y": 18.0882685,
+      "ISO3CD": "MAF",
+      "geoAreaCode": 663,
+      "geoAreaName": "Saint Martin (French Part)",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -56.33682442,
+      "Y": 46.85812735,
+      "ISO3CD": "SPM",
+      "geoAreaCode": 666,
+      "geoAreaName": "Saint Pierre and Miquelon",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -61.19024321,
+      "Y": 13.24627968,
+      "ISO3CD": "VCT",
+      "geoAreaCode": 670,
+      "geoAreaName": "Saint Vincent and the Grenadines",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 12.46329038,
+      "Y": 43.93841766,
+      "ISO3CD": "SMR",
+      "geoAreaCode": 674,
+      "geoAreaName": "San Marino",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 6.609772265,
+      "Y": 0.241554875,
+      "ISO3CD": "STP",
+      "geoAreaCode": 678,
+      "geoAreaName": "Sao Tome and Principe",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 44.54763347,
+      "Y": 24.12594211,
+      "ISO3CD": "SAU",
+      "geoAreaCode": 682,
+      "geoAreaName": "Saudi Arabia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -14.46636926,
+      "Y": 14.35920905,
+      "ISO3CD": "SEN",
+      "geoAreaCode": 686,
+      "geoAreaName": "Senegal",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 20.805876,
+      "Y": 44.03145697,
+      "ISO3CD": "SRB",
+      "geoAreaCode": 688,
+      "geoAreaName": "Serbia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 55.46561591,
+      "Y": -4.678053059,
+      "ISO3CD": "SYC",
+      "geoAreaCode": 690,
+      "geoAreaName": "Seychelles",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -11.78306584,
+      "Y": 8.568604164,
+      "ISO3CD": "SLE",
+      "geoAreaCode": 694,
+      "geoAreaName": "Sierra Leone",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 103.8107883,
+      "Y": 1.361009155,
+      "ISO3CD": "SGP",
+      "geoAreaCode": 702,
+      "geoAreaName": "Singapore",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 19.48495604,
+      "Y": 48.70741446,
+      "ISO3CD": "SVK",
+      "geoAreaCode": 703,
+      "geoAreaName": "Slovakia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 105.802499,
+      "Y": 10.09643079,
+      "ISO3CD": "VNM",
+      "geoAreaCode": 704,
+      "geoAreaName": "Viet Nam",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 14.82209486,
+      "Y": 46.11958061,
+      "ISO3CD": "SVN",
+      "geoAreaCode": 705,
+      "geoAreaName": "Slovenia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 46.20367477,
+      "Y": 4.406485729,
+      "ISO3CD": "SOM",
+      "geoAreaCode": 706,
+      "geoAreaName": "Somalia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 24.67184355,
+      "Y": -29.99957544,
+      "ISO3CD": "ZAF",
+      "geoAreaCode": 710,
+      "geoAreaName": "South Africa",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 29.86909584,
+      "Y": -19.00075492,
+      "ISO3CD": "ZWE",
+      "geoAreaCode": 716,
+      "geoAreaName": "Zimbabwe",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -3.554078296,
+      "Y": 40.39211472,
+      "ISO3CD": "ESP",
+      "geoAreaCode": 724,
+      "geoAreaName": "Spain",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 30.32618773,
+      "Y": 7.290839152,
+      "ISO3CD": "SSD",
+      "geoAreaCode": 728,
+      "geoAreaName": "South Sudan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -13.13515523,
+      "Y": 24.66265342,
+      "ISO3CD": "ESH",
+      "geoAreaCode": 732,
+      "geoAreaName": "Western Sahara",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 29.95650159,
+      "Y": 16.02643066,
+      "ISO3CD": "SDN",
+      "geoAreaCode": 736,
+      "geoAreaName": "Sudan",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -55.90626394,
+      "Y": 4.132603197,
+      "ISO3CD": "SUR",
+      "geoAreaCode": 740,
+      "geoAreaName": "Suriname",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 13.38071013,
+      "Y": 78.82894131,
+      "ISO3CD": "SJM",
+      "geoAreaCode": 744,
+      "geoAreaName": "Svalbard and Jan Mayen Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 31.50149288,
+      "Y": -26.56471011,
+      "ISO3CD": "SWZ",
+      "geoAreaCode": 748,
+      "geoAreaName": "Eswatini",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 14.3775338,
+      "Y": 60.60103109,
+      "ISO3CD": "SWE",
+      "geoAreaCode": 752,
+      "geoAreaName": "Sweden",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 8.223158,
+      "Y": 46.96617097,
+      "ISO3CD": "CHE",
+      "geoAreaCode": 756,
+      "geoAreaName": "Switzerland",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 38.50466565,
+      "Y": 35.01676176,
+      "ISO3CD": "SYR",
+      "geoAreaCode": 760,
+      "geoAreaName": "Syrian Arab Republic",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 69.294998,
+      "Y": 38.43069666,
+      "ISO3CD": "TJK",
+      "geoAreaCode": 762,
+      "geoAreaName": "Tajikistan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 101.0202951,
+      "Y": 15.13089239,
+      "ISO3CD": "THA",
+      "geoAreaCode": 764,
+      "geoAreaName": "Thailand",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 0.97835765,
+      "Y": 8.532096072,
+      "ISO3CD": "TGO",
+      "geoAreaCode": 768,
+      "geoAreaName": "Togo",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -171.8154473,
+      "Y": -9.214545558,
+      "ISO3CD": "TKL",
+      "geoAreaCode": 772,
+      "geoAreaName": "Tokelau",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -175.1959991,
+      "Y": -21.19511329,
+      "ISO3CD": "TON",
+      "geoAreaCode": 776,
+      "geoAreaName": "Tonga",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -61.29389504,
+      "Y": 10.41877263,
+      "ISO3CD": "TTO",
+      "geoAreaCode": 780,
+      "geoAreaName": "Trinidad and Tobago",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 53.98279159,
+      "Y": 23.43322219,
+      "ISO3CD": "ARE",
+      "geoAreaCode": 784,
+      "geoAreaName": "United Arab Emirates",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 9.572737411,
+      "Y": 34.11439971,
+      "ISO3CD": "TUN",
+      "geoAreaCode": 788,
+      "geoAreaName": "Tunisia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 35.42890329,
+      "Y": 38.9899684,
+      "ISO3CD": "TUR",
+      "geoAreaCode": 792,
+      "geoAreaName": "Turkey",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 58.9787665,
+      "Y": 40.0912346,
+      "ISO3CD": "TKM",
+      "geoAreaCode": 795,
+      "geoAreaName": "Turkmenistan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -71.745121,
+      "Y": 21.80780585,
+      "ISO3CD": "TCA",
+      "geoAreaCode": 796,
+      "geoAreaName": "Turks and Caicos Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 178.6679611,
+      "Y": -7.460048071,
+      "ISO3CD": "TUV",
+      "geoAreaCode": 798,
+      "geoAreaName": "Tuvalu",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 32.39100438,
+      "Y": 1.279557331,
+      "ISO3CD": "UGA",
+      "geoAreaCode": 800,
+      "geoAreaName": "Uganda",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 31.40270802,
+      "Y": 49.00735945,
+      "ISO3CD": "UKR",
+      "geoAreaCode": 804,
+      "geoAreaName": "Ukraine",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 21.7007909,
+      "Y": 41.60048068,
+      "ISO3CD": "MKD",
+      "geoAreaCode": 807,
+      "geoAreaName": "Macedonia, Republic of",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 29.77468534,
+      "Y": 26.57438204,
+      "ISO3CD": "EGY",
+      "geoAreaCode": 818,
+      "geoAreaName": "Egypt",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -2.23830539,
+      "Y": 53.27691757,
+      "ISO3CD": "GBR",
+      "geoAreaCode": 826,
+      "geoAreaName": "United Kingdom",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -2.200712402,
+      "Y": 49.71561166,
+      "ISO3CD": "GGY",
+      "geoAreaCode": 831,
+      "geoAreaName": "Guernsey",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -2.136773508,
+      "Y": 49.22353354,
+      "ISO3CD": "JEY",
+      "geoAreaCode": 832,
+      "geoAreaName": "Jersey",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -4.538190305,
+      "Y": 54.22880901,
+      "ISO3CD": "IMN",
+      "geoAreaCode": 833,
+      "geoAreaName": "Isle of Man",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": 34.80521182,
+      "Y": -6.265332606,
+      "ISO3CD": "TZA",
+      "geoAreaCode": 834,
+      "geoAreaName": "Tanzania, United Republic of",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -99.13830311,
+      "Y": 39.5277871,
+      "ISO3CD": "USA",
+      "geoAreaCode": 840,
+      "geoAreaName": "United States of America",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -64.76960113,
+      "Y": 17.73297693,
+      "ISO3CD": "VIR",
+      "geoAreaCode": 850,
+      "geoAreaName": "United States Virgin Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -1.742843829,
+      "Y": 12.27491081,
+      "ISO3CD": "BFA",
+      "geoAreaCode": 854,
+      "geoAreaName": "Burkina Faso",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -56.01387025,
+      "Y": -32.8002838,
+      "ISO3CD": "URY",
+      "geoAreaCode": 858,
+      "geoAreaName": "Uruguay",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 63.11944558,
+      "Y": 41.77560518,
+      "ISO3CD": "UZB",
+      "geoAreaCode": 860,
+      "geoAreaName": "Uzbekistan",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -66.15642084,
+      "Y": 7.121324748,
+      "ISO3CD": "VEN",
+      "geoAreaCode": 862,
+      "geoAreaName": "Venezuela (Bolivarian Republic of)",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": -176.2034788,
+      "Y": -13.28471201,
+      "ISO3CD": "WLF",
+      "geoAreaCode": 876,
+      "geoAreaName": "Wallis and Futuna Islands",
+      "UNMember": 0,
+      "CountryProfile": 1
+    },
+    {
+      "X": -172.4430749,
+      "Y": -13.61541469,
+      "ISO3CD": "WSM",
+      "geoAreaCode": 882,
+      "geoAreaName": "Samoa",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 45.22389143,
+      "Y": 15.22242099,
+      "ISO3CD": "YEM",
+      "geoAreaCode": 887,
+      "geoAreaName": "Yemen",
+      "UNMember": 1,
+      "CountryProfile": 1
+    },
+    {
+      "X": 27.850329,
+      "Y": -14.59701056,
+      "ISO3CD": "ZMB",
+      "geoAreaCode": 894,
+      "geoAreaName": "Zambia",
+      "UNMember": 1,
+      "CountryProfile": 1
+    }
+  ]
