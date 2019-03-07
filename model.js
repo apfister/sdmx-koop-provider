@@ -25,7 +25,7 @@ Model.prototype.getProviderDetail = function (req, callback) {
   const sdmxReference = provider.referenceConfig;
   let params = {
     url: sdmxReference.url,
-    headers: sdmxReference.headers
+    headers: Object.assign(sdmxReference.headers, {origin: req.hostname, referer: req.hostname})
   };
 
   if (sdmxReference.encoding) {
