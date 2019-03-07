@@ -5,145 +5,147 @@
 
   Documentation: http://koopjs.github.io/docs/usage/provider
 */
+const config = require('config');
 const request = require('request').defaults({
   gzip: true,
   json: true
 });
-const config = require('config');
-const sdmxReferenceConfig = require('./sdmx-all-references.json');
-const countryGeom = require('./config/country-geometry.json');
-
+const _ = require('underscore');
+const moment = require('moment');
 const format = require('string-format');
 format.extend(String.prototype, {});
 
-const fs = require('fs');
+const countryGeom = require('./config/country-geometry.json');
 
 function Model(koop) {}
 
-// Public function to return data from the
-// Return: GeoJSON FeatureCollection
-//
-// Config parameters (config/default.json)
-// req.
-//
-// URL path parameters:
-// req.params.host (if index.js:hosts true)
-// req.params.id  (if index.js:disableIdParam false)
-// req.params.layer
-// req.params.method
-Model.prototype.getApiDetail = function (req, callback) {
-  callback(null, {});
-}
+Model.prototype.getProviderDetail = function (req, callback) {
+  const provider = config;
 
-// Public function to return data from the
-// Return: GeoJSON FeatureCollection
-//
-// Config parameters (config/default.json)
-// req.
-//
-// URL path parameters:
-// req.params.host (if index.js:hosts true)
-// req.params.id  (if index.js:disableIdParam false)
-// req.params.layer
-// req.params.method
-Model.prototype.refreshConfig = function (req, callback) {
-  let outputFields = [];
-  const concepts = sdmxReferenceConfig.data.conceptSchemes[0].concepts;
-  // console.log(sdmxReferenceConfig.data.conceptSchemes);
-  for (var i=0;i < concepts.length; i++) {
-    const concept = concepts[i];
-    outputFields.push({
-      name: concept.id,
-      alias: concept.name.en,
-      type: 'esriFieldTypeString'
-    });
+  const sdmxReference = provider.referenceConfig;
+  let params = {
+    url: sdmxReference.url,
+    headers: sdmxReference.headers
+  };
+
+  if (sdmxReference.encoding) {
+    params['encoding'] = sdmxReference.encoding
   }
 
-  callback(null, outputFields);
+  request(params, (err, res, body) => {
+    if (err) return callback(err);
+
+    const dimensions = body.data.dataStructures[0].dataStructureComponents.dimensionList.dimensions;
+    const sdmxQueryKeyFormat = dimensions.map(dim => dim.id).join('.');
+    const featureServiceUrl = `${req.protocol}://${req.get('host')}/sdmx/{sdmxQueryKey}/FeatureServer/0`;
+  
+    const keysWithPossibleValues = dimensions.map(dim => {
+      const lookupObj = _.findWhere(body.data.codelists, {urn: dim.localRepresentation.enumeration });
+      if (lookupObj && lookupObj.codes) {
+        const possibleValues = lookupObj.codes.map(code => {
+          let obj = {
+            id: code.id,
+            name: code.name.en
+          };
+          if (code.description) {
+            obj.description = code.description.en;
+          }
+          return obj;
+        });
+        return {
+          id: dim.id,
+          possibleValues: possibleValues
+        }
+      } else {
+        console.log(`no codes for ${dim.id}`);
+      }
+    });
+   
+    const exampleValues = [];
+    keysWithPossibleValues.forEach(kpv => {
+      exampleValues.push(kpv.possibleValues[0].id);
+    });
+
+    const sdmxQueryKey = exampleValues.join('.');
+    const exampleFeatureServiceUrl = featureServiceUrl.format({sdmxQueryKey});
+
+    const out = {
+      meta: {
+        help: 'To construct the `sdmxQueryKey` variable, you can use the `sdmxQueryKeyFormat` and replace values between the dots (.) with a value from the `possibleValues` array in the `keysWithPossibleValues` array.',
+        exampleFeatureServiceUrl: exampleFeatureServiceUrl,
+        exampleFeatureServiceQueryUrl: `${exampleFeatureServiceUrl}/query?where=1=1`,
+        sdmxStructureUrl: provider.referenceConfig.url
+      },
+      data: {
+        providerName: provider.name,
+        featureServiceUrl: featureServiceUrl,
+        featureServiceQueryUrl: `${featureServiceUrl}/query?where=1=1` , 
+        sdmxQueryKeyFormat: sdmxQueryKeyFormat,
+        totalNumberOfKeys: dimensions.length,
+        keysWithPossibleValues: keysWithPossibleValues
+      }
+    }
+    callback(null, out);
+  });
 }
 
-// Public function to return data from the
-// Return: GeoJSON FeatureCollection
-//
-// Config parameters (config/default.json)
-// req.
-//
-// URL path parameters:
-// req.params.host (if index.js:hosts true)
-// req.params.id  (if index.js:disableIdParam false)
-// req.params.layer
-// req.params.method
 Model.prototype.getData = function (req, callback) {
-  // sample URL 
-  // https://api.data.unicef.org/sdmx/Rest/data/UNICEF,CME_DF,1.0/AFG.MRY0T4._T../?dimensionAtObservation=AllDimensions
-
-  const sdmxBaseUrl = config.unicefDataBaseApi.url;
-  
-  // console.log('req.params', req.params);
-  // console.log('req.query', req.query);
   if (!req.params || !req.params.id){
     return callback({message: 'indicator not specified'});
-  } 
-  
-  const sdmxParams = req.params.id.split(':');
-  if (sdmxParams.length === 0) {
-    return callback({message: 'no parameters specified'});
   }
 
-  if (sdmxParams[0].length !== 3) {
-    return callback({message: 'country code must be 3 characters'});
-  }
+  const provider = config;
+  const params = {
+    url: provider.dataConfig.url,
+    headers: provider.dataConfig.headers
+  };
 
-  const countryCode = sdmxParams[0];
-  const indicator = sdmxParams[1];
-  const sex = sdmxParams[2];
-
-  // {countryCode}.{indicatorCode}.{sexCode}.{otherCode}
-  let params = {};
-  sdmxParams.forEach(param => {
-    if (sdmxParams[0]) {
-      params['countryCode'] = sdmxParams[0];
-    }
-    if (sdmxParams[1]) {
-      params['indicatorCode'] = sdmxParams[1];
-    }
-    if (sdmxParams[2]) {
-      params['sexCode'] = sdmxParams[2];
-    }
-    if (sdmxParams[3]) {
-      params['otherCode'] = sdmxParams[3];
-    }
-  });
+  const queryKey = req.params.id;
   
-  console.log(sdmxBaseUrl);
-  const requestUrl = sdmxBaseUrl.format(params);
-  console.log(requestUrl);
+  params.url = params.url.format({queryKey});
 
-  request({url: requestUrl, headers: config.unicefDataBaseApi.headers }, (err, res, body) => {
+  request(params, (err, res, body) => {
     if (err) return callback(err);
-    const observations = body.data.dataSets[0].observations;
-    const dimensionProps = body.data.structure.dimensions.observation;
-    const attributeProps = body.data.structure.attributes.observation;
-    const fields = parseFieldsAndLookups(dimensionProps, attributeProps);
-    fields.push({
-      name: 'OBS_VALUE',
-      alias: 'Observation Value',
-      type: 'esriFieldTypeString'
-    });
+    const statusCode = res.statusCode;
+    if (statusCode === 403) {
+      return callback({message: `unable to query. make sure that \'${queryKey}\' is a valid SDMX query key. -- API Response -- ${res.body}`});
+    } else if (statusCode === 500) {
+      return callback({message: `error from API with sdmx query key: \'${queryKey}\' -- API Response -- ${res.body}`});
+    }
     
-    // TESTING outputs
-    // console.log(parsed);
-    // fs.writeFileSync('testing/fields.json', JSON.stringify(parsed.fields));
-    // fs.writeFileSync('testing/lookups.json', JSON.stringify(parsed.lookups));
+    let features = [];
+    let fields = [];
+    let layerName = '';
+    if (res.statusCode !== 404) {
+      const dimensionProps = body.data.structure.dimensions.observation;
+      const attributeProps = body.data.structure.attributes.observation;
+      fields = parseFieldsAndLookups(dimensionProps, attributeProps);
+      fields.push({
+        name: 'counterField',
+        alias: 'counterField',
+        type: 'Integer'
+      });
+      fields.push({
+        name: 'OBS_VALUE',
+        alias: 'Observation Value',
+        type: 'Double'
+      });
 
-    const features = createFeatures(observations, dimensionProps, attributeProps);
+      const observations = body.data.dataSets[0].observations;
+      features = createFeatures(observations, dimensionProps, attributeProps); 
+
+      layerName = body.data.structure.name.en;
+    }
+
     const fc = {
       type: 'FeatureCollection',
       features: features
-    }
+    };
 
     fc.metadata = {
-      name: body.data.structure.name.en
+      name: layerName,
+      idField: 'counterField',
+      fields: fields
     };
 
     callback(null, fc);
@@ -152,6 +154,7 @@ Model.prototype.getData = function (req, callback) {
 
 function createFeatures(observations, dimensionProps, attributeProps) {
   let features = [];
+  let idCounter = 1;
   for (obs in observations) {
     let feature = { type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates:[]} };
     
@@ -163,8 +166,10 @@ function createFeatures(observations, dimensionProps, attributeProps) {
       const foundDim = dimensionProps.filter(dim => dim.keyPosition === i)[0];
       if (foundDim) {
         if (foundDim.id === 'TIME_PERIOD') {
-          feature.properties[`${foundDim.id}_CODE`] = foundDim.values[currentKeyInt].id;
-          feature.properties[foundDim.name.en.toUpperCase().replace(' ', '_')] = 'world';
+          const tv = moment(foundDim.values[currentKeyInt].name.en, 'YYYY-MM');
+          // feature.properties[`${foundDim.id}_CODE`] = foundDim.values[currentKeyInt].id;
+          feature.properties[`${foundDim.id}_CODE`] = tv.format('YYYY-MM').toString();
+          feature.properties[foundDim.name.en.toUpperCase().replace(' ', '_')] = tv.format('YYYY-MM').toString();
         } else {
           feature.properties[`${foundDim.id}_CODE`] = foundDim.values[currentKeyInt].id;
           feature.properties[foundDim.name.en.toUpperCase().replace(' ', '_')] = foundDim.values[currentKeyInt].name.en;
@@ -189,7 +194,8 @@ function createFeatures(observations, dimensionProps, attributeProps) {
       }        
     }
 
-    feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE);
+    feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE, config.dataConfig.geographyCodeField);
+    feature.properties['counterField'] = idCounter++;
 
     features.push(feature);
   }
@@ -197,11 +203,11 @@ function createFeatures(observations, dimensionProps, attributeProps) {
   return features;
 }
 
-function getCountryGeometry(iso3cd) {
+function getCountryGeometry(iso3cd, geographyCodeField) {
   let coords = [0,0];
   for (var i=0;i < countryGeom.length;i++) {
     const c = countryGeom[i];
-    if (c.ISO3CD === iso3cd) {
+    if (c[geographyCodeField] === iso3cd) {
       coords = [c.X, c.Y];
     }
   }
@@ -214,28 +220,28 @@ function parseFieldsAndLookups(dimensionProps, attributeProps) {
   dimensionProps.forEach(obs => {
     fields.push({
       name: `${obs.id}_CODE`,
-      alias: obs.id,
-      type: 'esriFieldTypeString'
+      alias: `${obs.id}_CODE`,
+      type: 'String'
     });
 
     fields.push({
       name: obs.name.en.toUpperCase().replace(' ', '_'),
       alias: obs.name.en,
-      type: 'esriFieldTypeString'
+      type: 'String'
     }); 
   });
 
   attributeProps.forEach(obs => {
     fields.push({
       name: `${obs.id}_CODE`,
-      alias: obs.id,
-      type: 'esriFieldTypeString'
+      alias: `${obs.id}_CODE`,
+      type: 'String'
     });
 
     fields.push({
       name: obs.name.en.toUpperCase().replace(' ', '_'),
       alias: obs.name.en,
-      type: 'esriFieldTypeString'
+      type: 'String'
     });   
   });
 

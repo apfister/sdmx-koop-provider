@@ -5,13 +5,8 @@
 */
 module.exports = [
   {
-    path: '/sdmx',
+    path: '/sdmx/info',
     methods: [ 'get', 'post' ],
-    handler: 'getApiDetail'
-  },
-  {
-    path: '/sdmx/refreshConfig',
-    methods: [ 'get', 'post' ],
-    handler: 'refreshConfig'
+    handler: 'getProviderDetail'
   }
 ];

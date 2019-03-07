@@ -9,20 +9,10 @@ function Controller (model) {
   this.model = model
 }
 
-Controller.prototype.getApiDetail = function (req, res) {
-  this.model.getApiDetail(req, (err, resource) => {
+Controller.prototype.getProviderDetail = function (req, res) {
+  this.model.getProviderDetail(req, (err, resource) => {
     if (err) {
-      res.status(500 || err.code).json({ error: err });
-    } else {
-      res.json(resource);
-    }
-  });
-};
-
-Controller.prototype.refreshConfig = function (req, res) {
-  this.model.refreshConfig(req, (err, resource) => {
-    if (err) {
-      res.status(500 || err.code).json({ error: err });
+      res.status(500 || err.code).json(err);
     } else {
       res.json(resource);
     }

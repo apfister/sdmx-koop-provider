@@ -12,8 +12,11 @@
   "dependencies": {
     "config": "^3.0.0",
     "koop": "^3.10.1",
+    "moment": "^2.24.0",
     "request": "^2.79.0",
-    "string-format": "^2.0.0"
+    "request-debug": "^0.2.0",
+    "string-format": "^2.0.0",
+    "underscore": "^1.9.1"
   },
   "devDependencies": {
     "nock": "^10.0.0",
