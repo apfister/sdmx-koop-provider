@@ -19,8 +19,20 @@ const countryGeom = require('./config/country-geometry.json');
 
 function Model(koop) {}
 
-Model.prototype.getProviderDetail = function (req, callback) {
-  const provider = config;
+Model.prototype.getSources = function (req, callback) {
+  Object.keys(config).forEach(key => {
+    config[key]['sourceDetailUrl'] = `${req.protocol}://${req.get('host')}/sdmx/${key}`;
+  });
+  return callback(null, config);
+}
+
+Model.prototype.getSourceDetail = function (req, callback) {
+  if (!config[req.params.source]) {
+    const message = `source '${req.params.source}' not found. please use a key from the available list: ${Object.keys(config)}`;
+    return callback({message:message});
+  }
+
+  const provider = config[req.params.source];
 
   const sdmxReference = provider.referenceConfig;
   let params = {
@@ -37,7 +49,7 @@ Model.prototype.getProviderDetail = function (req, callback) {
 
     const dimensions = body.data.dataStructures[0].dataStructureComponents.dimensionList.dimensions;
     const sdmxQueryKeyFormat = dimensions.map(dim => dim.id).join('.');
-    const featureServiceUrl = `${req.protocol}://${req.get('host')}/sdmx/{sdmxQueryKey}/FeatureServer/0`;
+    const featureServiceUrl = `${req.protocol}://${req.get('host')}/sdmx/${req.params.source}::{sdmxQueryKey}/FeatureServer/0`;
   
     const keysWithPossibleValues = dimensions.map(dim => {
       const lookupObj = _.findWhere(body.data.codelists, {urn: dim.localRepresentation.enumeration });
@@ -90,17 +102,25 @@ Model.prototype.getProviderDetail = function (req, callback) {
 }
 
 Model.prototype.getData = function (req, callback) {
-  if (!req.params || !req.params.id){
-    return callback({message: 'indicator not specified'});
+  const inId = req.params.id.split('::');
+  if (!inId || inId.length !== 2) {
+    const message = `id '${req.params.id}' is not formed correctly. the format should be {sourceKey}::{sdmxQueryKey}`;
+    return callback({message:message});
+  }
+  
+  const source = inId[0];
+  if (!config[source]) {
+    const message = `source '${source}' not found. please use a key from the available list: ${Object.keys(config)}`;
+    return callback({message:message});
   }
 
-  const provider = config;
+  const provider = config[source];
+  const queryKey = inId[1];
+
   const params = {
     url: provider.dataConfig.url,
     headers: provider.dataConfig.headers
   };
-
-  const queryKey = req.params.id;
   
   params.url = params.url.format({queryKey});
 
@@ -132,7 +152,7 @@ Model.prototype.getData = function (req, callback) {
       });
 
       const observations = body.data.dataSets[0].observations;
-      features = createFeatures(observations, dimensionProps, attributeProps); 
+      features = createFeatures(observations, dimensionProps, attributeProps, provider.dataConfig.geographyCodeField); 
 
       layerName = body.data.structure.name.en;
     }
@@ -152,7 +172,7 @@ Model.prototype.getData = function (req, callback) {
   });  
 }
 
-function createFeatures(observations, dimensionProps, attributeProps) {
+function createFeatures(observations, dimensionProps, attributeProps, geographyCodeField) {
   let features = [];
   let idCounter = 1;
   for (obs in observations) {
@@ -194,7 +214,7 @@ function createFeatures(observations, dimensionProps, attributeProps) {
       }        
     }
 
-    feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE, config.dataConfig.geographyCodeField);
+    feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE, geographyCodeField);
     feature.properties['counterField'] = idCounter++;
 
     features.push(feature);
