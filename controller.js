@@ -9,8 +9,18 @@ function Controller (model) {
   this.model = model
 }
 
-Controller.prototype.getProviderDetail = function (req, res) {
-  this.model.getProviderDetail(req, (err, resource) => {
+Controller.prototype.getSources = function (req, res) {
+  this.model.getSources(req, (err, resource) => {
+    if (err) {
+      res.status(500 || err.code).json(err);
+    } else {
+      res.json(resource);
+    }
+  });
+};
+
+Controller.prototype.getSourceDetail = function (req, res) {
+  this.model.getSourceDetail(req, (err, resource) => {
     if (err) {
       res.status(500 || err.code).json(err);
     } else {

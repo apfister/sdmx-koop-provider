@@ -5,8 +5,13 @@
 */
 module.exports = [
   {
-    path: '/sdmx/info',
+    path: '/sdmx',
     methods: [ 'get', 'post' ],
-    handler: 'getProviderDetail'
+    handler: 'getSources'
+  },
+  {
+    path: '/sdmx/:source',
+    methods: [ 'get', 'post' ],
+    handler: 'getSourceDetail'
   }
 ];
