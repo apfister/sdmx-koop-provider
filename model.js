@@ -49,7 +49,7 @@ Model.prototype.getSourceDetail = function (req, callback) {
 
     const dimensions = body.data.dataStructures[0].dataStructureComponents.dimensionList.dimensions;
     const sdmxQueryKeyFormat = dimensions.map(dim => dim.id).join('.');
-    const featureServiceUrl = `${req.protocol}://${req.get('host')}/sdmx/${req.params.host}::{sdmxQueryKey}/FeatureServer/0`;
+    const featureServiceUrl = `${req.protocol}://${req.get('host')}/sdmx/${req.params.id}/{sdmxQueryKey}/FeatureServer/0`;
   
     const keysWithPossibleValues = dimensions.map(dim => {
       const lookupObj = _.findWhere(body.data.codelists, {urn: dim.localRepresentation.enumeration });
