@@ -10,7 +10,7 @@
 const provider = {
     type: 'provider',
     name: 'sdmx',
-    hosts: false, // if true, also adds disableIdParam
+    hosts: true, // if true, also adds disableIdParam
     disableIdParam: false, // if true, adds to path and req.params
     Controller: require('./controller'),
     Model: require('./model'),

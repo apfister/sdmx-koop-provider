@@ -10,7 +10,7 @@ module.exports = [
     handler: 'getSources'
   },
   {
-    path: '/sdmx/:source',
+    path: '/sdmx/:id',
     methods: [ 'get', 'post' ],
     handler: 'getSourceDetail'
   }

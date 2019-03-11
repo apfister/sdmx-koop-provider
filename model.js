@@ -27,12 +27,12 @@ Model.prototype.getSources = function (req, callback) {
 }
 
 Model.prototype.getSourceDetail = function (req, callback) {
-  if (!config[req.params.source]) {
-    const message = `source '${req.params.source}' not found. please use a key from the available list: ${Object.keys(config)}`;
+  if (!config[req.params.id]) {
+    const message = `source '${req.params.id}' not found. please use a key from the available list: ${Object.keys(config)}`;
     return callback({message:message});
   }
 
-  const provider = config[req.params.source];
+  const provider = config[req.params.id];
 
   const sdmxReference = provider.referenceConfig;
   let params = {
@@ -49,7 +49,7 @@ Model.prototype.getSourceDetail = function (req, callback) {
 
     const dimensions = body.data.dataStructures[0].dataStructureComponents.dimensionList.dimensions;
     const sdmxQueryKeyFormat = dimensions.map(dim => dim.id).join('.');
-    const featureServiceUrl = `${req.protocol}://${req.get('host')}/sdmx/${req.params.source}::{sdmxQueryKey}/FeatureServer/0`;
+    const featureServiceUrl = `${req.protocol}://${req.get('host')}/sdmx/${req.params.host}::{sdmxQueryKey}/FeatureServer/0`;
   
     const keysWithPossibleValues = dimensions.map(dim => {
       const lookupObj = _.findWhere(body.data.codelists, {urn: dim.localRepresentation.enumeration });
@@ -102,20 +102,24 @@ Model.prototype.getSourceDetail = function (req, callback) {
 }
 
 Model.prototype.getData = function (req, callback) {
-  const inId = req.params.id.split('::');
-  if (!inId || inId.length !== 2) {
-    const message = `id '${req.params.id}' is not formed correctly. the format should be {sourceKey}::{sdmxQueryKey}`;
-    return callback({message:message});
-  }
-  
-  const source = inId[0];
-  if (!config[source]) {
-    const message = `source '${source}' not found. please use a key from the available list: ${Object.keys(config)}`;
+  if (!req.params && !req.params.host){
+    const message = `no 'source' specified. the correct format should be ${req.protocol}://${req.get('host')}/sdmx/{source}/{sdmxQueryKey}/FeatureServer/0`;
     return callback({message:message});
   }
 
+  if (!config[req.params.host]){
+    const message = `source '${req.params.host}' not found. please use a key from the available list: ${Object.keys(config)}`;
+    return callback({message:message});
+  }
+
+  if (!req.params.id) {
+    const message = `no 'sdmxKeyQuery' specified. `;
+    return callback({message:message});
+  }
+
+  const source = req.params.host;
   const provider = config[source];
-  const queryKey = inId[1];
+  const queryKey = req.params.id;
 
   const params = {
     url: provider.dataConfig.url,
