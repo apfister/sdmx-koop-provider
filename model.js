@@ -152,7 +152,10 @@ Model.prototype.getData = function (req, callback) {
       });
 
       const observations = body.data.dataSets[0].observations;
-      features = createFeatures(observations, dimensionProps, attributeProps, provider.dataConfig.geographyCodeField); 
+
+      const returnGeometry = (req.query && typeof req.query.returnGeometry !== 'undefined') ? req.query.returnGeometry : true;
+
+      features = createFeatures(observations, dimensionProps, attributeProps, returnGeometry, provider.dataConfig.geographyCodeField); 
 
       layerName = body.data.structure.name.en;
     }
@@ -172,7 +175,7 @@ Model.prototype.getData = function (req, callback) {
   });  
 }
 
-function createFeatures(observations, dimensionProps, attributeProps, geographyCodeField) {
+function createFeatures(observations, dimensionProps, attributeProps, returnGeom, geographyCodeField) {
   let features = [];
   let idCounter = 1;
   for (obs in observations) {
@@ -214,7 +217,10 @@ function createFeatures(observations, dimensionProps, attributeProps, geographyC
       }        
     }
 
-    feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE, geographyCodeField);
+    if (returnGeom) {
+      feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE, geographyCodeField);
+    }
+    
     feature.properties['counterField'] = idCounter++;
 
     features.push(feature);
@@ -223,11 +229,11 @@ function createFeatures(observations, dimensionProps, attributeProps, geographyC
   return features;
 }
 
-function getCountryGeometry(iso3cd, geographyCodeField) {
+function getCountryGeometry(countryCode, geographyCodeField) {
   let coords = [0,0];
   for (var i=0;i < countryGeom.length;i++) {
     const c = countryGeom[i];
-    if (c[geographyCodeField] === iso3cd) {
+    if (c[geographyCodeField] === countryCode) {
       coords = [c.X, c.Y];
     }
   }
