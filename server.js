@@ -5,6 +5,18 @@ process.on('SIGTERM', () => process.exit(0));
 // Initialize Koop
 const Koop = require('koop');
 const koop = new Koop();
+const redisCache = require('@koopjs/cache-redis');
+
+const redisOptions = {
+  host: {
+    host: '<azure redis host goes here>',
+    port: 6380,
+    auth_pass: '<azure redis auth goes here>',
+    tls: { servername: '<azure redis host goes here>' }
+  }
+};
+
+koop.register(redisCache, redisOptions);
 
 // Install the Sample Provider
 const provider = require('./');

@@ -1,72 +1,72 @@
 {
-  "unicef": {
-      "name": "unicef",
-      "referenceConfig": {
-          "url": "https://api.data.unicef.org/sdmx/Rest/dataflow/UNICEF/CME_DF/1.0/?references=all",
-          "headers": {
-              "accept": "application/vnd.sdmx.structure+json;version=1.0"
-          },
-          "keyForIndicators": "CL_INDICATOR_CME",
-          "encoding": "utf8"
-      },
-      "dataConfig": {
-          "url": "https://api.data.unicef.org/sdmx/Rest/data/UNICEF,CME_DF,1.0/{queryKey}/?dimensionAtObservation=AllDimensions",
-          "headers": {
-              "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
-          },
-          "geographyCodeField": "ISO3CD"
-      }
-  },
-  "unesco": {
-      "name": "unesco",
-      "referenceConfig": {
-          "url": "https://api.data.unicef.org/sdmx/Rest/dataflow/UNESCO/EDU_NON_FINANCE/3.0/?references=all&detail=full",
-          "headers": {
-              "accept": "application/vnd.sdmx.structure+json;version=1.0"
-          },
-          "keyForIndicators": "CL_STAT_UNIT",
-          "encoding": "utf8"
-      },
-      "dataConfig": {
-          "url": "https://api.data.unicef.org/sdmx/Rest/data/UNESCO,EDU_NON_FINANCE,3.0/{queryKey}/?dimensionAtObservation=AllDimensions",
-          "headers": {
-              "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
-          },
-          "geographyCodeField": "ISO2CD"
-      }
-  },
-  "oecd": {
-      "name": "OECD",
-      "referenceConfig": {
-          "url": "http://dotstat-sdg-nsiws.azurewebsites.net/rest/dataflow/KH_NIS/DF_DEMO/1.0/?references=all",
-          "headers": {
-              "accept": "application/vnd.sdmx.structure+json;version=1.0"
-          },
-          "encoding": "utf8"
-      },
-      "dataConfig": {
-          "url": "http://dotstat-sdg-nsiws.azurewebsites.net/rest/data/KH_NIS,DF_DEMO,1.0/all/{queryKey}/?dimensionAtObservation=AllDimensions",
-          "headers": {
-              "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
-          },
-          "geographyCodeField": "ISO3CD"
-      }
-  },
-  "une": {
-      "name": "un environment",
-      "referenceConfig": {
-          "url": "https://api.data.unicef.org/sdmx/Rest/dataflow/UNICEF/CME_DF/1.0/?references=all",
-          "headers": {
-              "accept": "application/vnd.sdmx.structure+json;version=1.0"
-          },
-          "encoding": "utf8"
-      },
-      "dataConfig": {
-          "url": "https://api.data.unicef.org/sdmx/Rest/data/UNICEF,CME_DF,1.0/{queryKey}/?dimensionAtObservation=AllDimensions",
-          "headers": {
-              "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
-          },
-          "geographyCodeField": "ISO3CD"
-      }
-  }
+    "unicef": {
+        "name": "unicef",
+        "referenceConfig": {
+            "url": "https://api.data.unicef.org/sdmx/Rest/dataflow/UNICEF/CME_DF/1.0/?references=all",
+            "headers": {
+                "accept": "application/vnd.sdmx.structure+json;version=1.0"
+            },
+            "keyForIndicators": "CL_INDICATOR_CME",
+            "encoding": "utf8"
+        },
+        "dataConfig": {
+            "url": "https://api.data.unicef.org/sdmx/Rest/data/UNICEF,CME_DF,1.0/{queryKey}/?dimensionAtObservation=AllDimensions",
+            "headers": {
+                "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
+            },
+            "geographyCodeField": "ISO3CD"
+        }
+    },
+    "unesco": {
+        "name": "unesco",
+        "referenceConfig": {
+            "url": "https://api.data.unicef.org/sdmx/Rest/dataflow/UNESCO/EDU_NON_FINANCE/3.0/?references=all&detail=full",
+            "headers": {
+                "accept": "application/vnd.sdmx.structure+json;version=1.0"
+            },
+            "keyForIndicators": "CL_STAT_UNIT",
+            "encoding": "utf8"
+        },
+        "dataConfig": {
+            "url": "https://api.data.unicef.org/sdmx/Rest/data/UNESCO,EDU_NON_FINANCE,3.0/{queryKey}/?dimensionAtObservation=AllDimensions",
+            "headers": {
+                "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
+            },
+            "geographyCodeField": "ISO2CD"
+        }
+    },
+    "oecd": {
+        "name": "OECD",
+        "referenceConfig": {
+            "url": "http://dotstat-sdg-nsiws.azurewebsites.net/rest/dataflow/KH_NIS/DF_DEMO/1.0/?references=all",
+            "headers": {
+                "accept": "application/vnd.sdmx.structure+json;version=1.0"
+            },
+            "encoding": "utf8"
+        },
+        "dataConfig": {
+            "url": "http://dotstat-sdg-nsiws.azurewebsites.net/rest/data/KH_NIS,DF_DEMO,1.0/all/{queryKey}/?dimensionAtObservation=AllDimensions",
+            "headers": {
+                "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
+            },
+            "geographyCodeField": "ISO3CD"
+        }
+    },
+    "une": {
+        "name": "un environment",
+        "referenceConfig": {
+            "url": "https://api.data.unicef.org/sdmx/Rest/dataflow/UNICEF/CME_DF/1.0/?references=all",
+            "headers": {
+                "accept": "application/vnd.sdmx.structure+json;version=1.0"
+            },
+            "encoding": "utf8"
+        },
+        "dataConfig": {
+            "url": "https://api.data.unicef.org/sdmx/Rest/data/UNICEF,CME_DF,1.0/{queryKey}/?dimensionAtObservation=AllDimensions",
+            "headers": {
+                "accept": "application/vnd.sdmx.data+json;version=1.0.0-wd"
+            },
+            "geographyCodeField": "ISO3CD"
+        }
+    }
 }

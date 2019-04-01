@@ -6,12 +6,12 @@
 module.exports = [
   {
     path: '/sdmx',
-    methods: [ 'get', 'post' ],
+    methods: ['get', 'post'],
     handler: 'getSources'
   },
   {
     path: '/sdmx/:id',
-    methods: [ 'get', 'post' ],
+    methods: ['get', 'post'],
     handler: 'getSourceDetail'
   }
 ];

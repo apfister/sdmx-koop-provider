@@ -8,14 +8,14 @@
 // /:name/:hosts?/:disableIdParam?/FeatureServer/:layer/:method
 // e.g. /sample/FeatureServer/0/query
 const provider = {
-    type: 'provider',
-    name: 'sdmx',
-    hosts: true, // if true, also adds disableIdParam
-    disableIdParam: false, // if true, adds to path and req.params
-    Controller: require('./controller'),
-    Model: require('./model'),
-    routes: require('./routes'),
-    version: require('./package.json').version
-  }
-  
-  module.exports = provider
+  type: 'provider',
+  name: 'sdmx',
+  hosts: true, // if true, also adds disableIdParam
+  disableIdParam: false, // if true, adds to path and req.params
+  Controller: require('./controller'),
+  Model: require('./model'),
+  routes: require('./routes'),
+  version: require('./package.json').version
+};
+
+module.exports = provider;

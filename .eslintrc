@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "prettier"
+    ],
+    "env": {
+        "es6": true
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "printWidth": 120,
+                "jsxBracketSameLine": true
+            }
+        ]
+    },
+    "plugins": ["prettier"]
+}

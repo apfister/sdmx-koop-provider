@@ -3,3 +3,4 @@ testing/
 node_modules
 *.log
 nodemon.json
+.deployment

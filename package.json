@@ -10,8 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koopjs/cache-redis": "^1.0.1",
     "config": "^3.0.0",
-    "koop": "^3.10.1",
+    "koop": "^3.11.0",
     "moment": "^2.24.0",
     "request": "^2.79.0",
     "request-debug": "^0.2.0",
@@ -19,6 +20,9 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4",
     "nock": "^10.0.0",
     "standard": "^10.0.0",
     "tap-spec": "^5.0.0",
