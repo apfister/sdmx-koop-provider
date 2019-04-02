@@ -1,3 +1,4 @@
+.env
 .vscode
 testing/
 node_modules

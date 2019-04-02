@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV || process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 // clean shutdown on `cntrl + c`
 process.on('SIGINT', () => process.exit(0));
 process.on('SIGTERM', () => process.exit(0));
@@ -7,12 +11,16 @@ const Koop = require('koop');
 const koop = new Koop();
 const redisCache = require('@koopjs/cache-redis');
 
+const redisHost = process.env.REDIS_HOST;
+const redisPort = process.env.REDIS_PORT;
+const redisAuth = process.env.REDIS_AUTH;
+
 const redisOptions = {
   host: {
-    host: '<azure redis host goes here>',
-    port: 6380,
-    auth_pass: '<azure redis auth goes here>',
-    tls: { servername: '<azure redis host goes here>' }
+    host: redisHost,
+    port: redisPort,
+    auth_pass: redisAuth,
+    tls: { servername: redisHost }
   }
 };
 

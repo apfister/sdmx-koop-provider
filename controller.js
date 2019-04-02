@@ -29,4 +29,14 @@ Controller.prototype.getSourceDetail = function(req, res) {
   });
 };
 
+Controller.prototype.flushKey = function(req, res) {
+  this.model.flushKey(req, (err, resource) => {
+    if (err) {
+      res.status(500 || err.code).json(err);
+    } else {
+      res.json(resource);
+    }
+  });
+};
+
 module.exports = Controller;

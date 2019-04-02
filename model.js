@@ -10,6 +10,7 @@ const request = require('request').defaults({
   gzip: true,
   json: true
 });
+const util = require('util');
 const _ = require('underscore');
 const moment = require('moment');
 const format = require('string-format');
@@ -19,10 +20,28 @@ const countryGeom = require('./config/country-geometry.json');
 
 function Model(koop) {}
 
-// Model.prototype.createKey = function(req) {
-//   console.log('creating new key');
-//   return 'newKey1';
-// };
+Model.prototype.flushKey = function(req, callback) {
+  const key = `sdmx::${req.params.id}::${req.params.key}`;
+  const deleteCache = util.promisify(this.cache.delete).bind(this.cache);
+  const deleteCacheCatalog = util.promisify(this.cache.catalog.delete).bind(this.cache);
+
+  deleteCache(key)
+    .then(response => {
+      deleteCacheCatalog(key)
+        .then(response => {
+          return callback(null, { message: `successfully cleared redis cache for key ${key}` });
+        })
+        .catch(error => {
+          return callback(error);
+        });
+    })
+    .catch(error => {
+      if (error.message === 'Resource not found') {
+        return callback(null, { message: `successfully cleared redis cache for key ${key}` });
+      }
+      return callback(error);
+    });
+};
 
 Model.prototype.getSources = function(req, callback) {
   Object.keys(config).forEach(key => {
@@ -196,28 +215,19 @@ Model.prototype.getData = function(req, callback) {
         });
 
         fc.metadata.fields = fc.metadata.fields.concat(fields);
-        // console.log('fc.metadata.fields', fc.metadata.fields);
 
         const observations = body.data.dataSets[0].observations;
 
-        const returnGeometry =
-          req.query && typeof req.query.returnGeometry !== 'undefined' ? req.query.returnGeometry : true;
-
-        features = createFeatures(
-          observations,
-          dimensionProps,
-          attributeProps,
-          returnGeometry,
-          provider.dataConfig.geographyCodeField
-        );
+        features = createFeatures(observations, dimensionProps, attributeProps, provider.dataConfig.geographyCodeField);
         fc.features = features;
 
         layerName = body.data.structure.name.en;
 
         fc.metadata.name = layerName;
 
-        // 2 min
-        fc.ttl = 120;
+        //get ttl seconds from ENV var -- default to 86,400 (1 day)
+        const ttl = process.env.REDIS_TTL || 86400;
+        fc.ttl = ttl;
 
         return callback(null, fc);
       }
@@ -228,7 +238,7 @@ Model.prototype.getData = function(req, callback) {
   );
 };
 
-function createFeatures(observations, dimensionProps, attributeProps, returnGeom, geographyCodeField) {
+function createFeatures(observations, dimensionProps, attributeProps, geographyCodeField) {
   let features = [];
   let idCounter = 1;
   for (obs in observations) {
@@ -270,9 +280,7 @@ function createFeatures(observations, dimensionProps, attributeProps, returnGeom
       }
     }
 
-    if (returnGeom) {
-      feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE, geographyCodeField);
-    }
+    feature.geometry.coordinates = getCountryGeometry(feature.properties.REF_AREA_CODE, geographyCodeField);
 
     feature.properties['counterField'] = idCounter++;
 

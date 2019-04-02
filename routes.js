@@ -13,5 +13,10 @@ module.exports = [
     path: '/sdmx/:id',
     methods: ['get', 'post'],
     handler: 'getSourceDetail'
+  },
+  {
+    path: '/sdmx/:id/:key/flush',
+    methods: ['get', 'post'],
+    handler: 'flushKey'
   }
 ];
