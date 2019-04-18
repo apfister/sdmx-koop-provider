@@ -199,6 +199,13 @@ Model.prototype.getData = function(req, callback) {
         return callback({
           message: `error from API with sdmx query key: \'${queryKey}\' -- API Response -- ${res.body}`
         });
+      } else if (statusCode === 404 && res.body !== 'Not Found - NoRecordsFound') {
+        // if the response is 404 and it's not because there aren't any records returned from a query
+        return callback({
+          message: `the sdmx query key of  : \'${queryKey}\' came back with a 404 not found response. -- API Response --> ${
+            res.body
+          }`
+        });
       }
 
       let features = [];
@@ -229,6 +236,9 @@ Model.prototype.getData = function(req, callback) {
         const ttl = process.env.REDIS_TTL || 86400;
         fc.ttl = ttl;
 
+        return callback(null, fc);
+      } else if (res.statusCode === 404) {
+        // some of the SDMX endpoints return a 404 even for when there are zero records returned.
         return callback(null, fc);
       }
     },
