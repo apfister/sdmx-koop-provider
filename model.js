@@ -118,7 +118,8 @@ Model.prototype.getSourceDetail = function(req, callback) {
         sdmxStructureUrl: provider.referenceConfig.url
       },
       data: {
-        providerName: provider.name,
+        name: provider.name,
+        indicatorKey: provider.referenceConfig.keyForIndicators,
         featureServiceUrl: featureServiceUrl,
         featureServiceQueryUrl: `${featureServiceUrl}/query?where=1=1`,
         sdmxQueryKeyFormat: sdmxQueryKeyFormat,

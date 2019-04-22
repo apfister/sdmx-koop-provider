@@ -6,7 +6,7 @@
             "headers": {
                 "accept": "application/vnd.sdmx.structure+json;version=1.0"
             },
-            "keyForIndicators": "CL_INDICATOR_CME",
+            "keyForIndicators": "INDICATOR",
             "encoding": "utf8"
         },
         "dataConfig": {
@@ -24,7 +24,7 @@
             "headers": {
                 "accept": "application/vnd.sdmx.structure+json;version=1.0"
             },
-            "keyForIndicators": "CL_STAT_UNIT",
+            "keyForIndicators": "STAT_UNIT",
             "encoding": "utf8"
         },
         "dataConfig": {
